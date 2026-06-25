@@ -1,4 +1,15 @@
-// ===== NAVBAR SCROLL =====
+// SMOOTH SCROLL 
+document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+// NAVBAR SCROLL 
 window.addEventListener('scroll', () => {
   const nav = document.getElementById('navbar');
   if (window.scrollY > 50) {
@@ -8,7 +19,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// ===== MOBILE MENU =====
+//  MOBILE MENU 
 function toggleMenu() {
   const menu = document.getElementById('mobileMenu');
   menu.classList.toggle('open');
@@ -29,7 +40,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// ===== COUNTER ANIMATION =====
+// COUNTER ANIMATION 
 function animateCounter(el, target) {
   let current = 0;
   const duration = 2000;
@@ -57,7 +68,7 @@ const heroObserver = new IntersectionObserver((entries) => {
 
 heroObserver.observe(document.getElementById('home'));
 
-// ===== AMOUNT SELECT =====
+//  AMOUNT SELECT 
 function selectAmount(btn, amount) {
   document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
@@ -66,7 +77,7 @@ function selectAmount(btn, amount) {
   if (amount === 0) inp.focus();
 }
 
-// ===== TOAST =====
+//  TOAST 
 function showToast(msg) {
   const t = document.getElementById('toast');
   t.textContent = msg;
@@ -74,7 +85,7 @@ function showToast(msg) {
   setTimeout(() => t.classList.remove('show'), 3200);
 }
 
-// ===== DONATE =====
+//  DONATE 
 function handleDonate() {
   const amt = document.getElementById('customAmount').value;
   if (!amt || amt < 1) {
@@ -84,7 +95,7 @@ function handleDonate() {
   showToast('✅ Redirecting to payment — JazzCash/EasyPaisa. JazakAllah!');
 }
 
-// ===== CONTACT FORM =====
+// CONTACT FORM 
 function handleContact() {
   showToast('✅ Message sent! Alkhidmat team will contact you shortly.');
 }
