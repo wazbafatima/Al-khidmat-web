@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alkhidmat Impact Hub | Youth For Change</title>
+  <title>Donate | Alkhidmat Impact Hub</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
@@ -18,7 +18,7 @@
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html" class="active-link">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="impact.html">Our Impact</a></li>
     <li><a href="volunteer.html">Volunteer</a></li>
     <li><a href="events.html">Events</a></li>
@@ -41,42 +41,67 @@
   <a href="contact.html" onclick="closeMenu()">Contact</a>
 </div>
 
-<section id="home">
-  <div class="hero-bg-pattern"></div>
-  <div class="hero-grid-lines"></div>
-  <div class="hero-content">
-    <h1 class="hero-title">
-      Youth For
-      <span class="highlight">Change</span>
-    </h1>
-    <p class="hero-tagline">خدمتِ خلق ہی خدمتِ خدا ہے</p>
-    <p class="hero-desc">
-      Empowering Pakistan's youth through disaster relief, education, healthcare and community service since 1990.
-    </p>
-    <div class="hero-btns">
-      <a href="volunteer.html" class="btn-primary">Join as Volunteer</a>
-      <a href="impact.html" class="btn-secondary">Explore Our Work</a>
+<section id="donations">
+  <div class="section-header reveal">
+    <div class="section-label">Make a Difference</div>
+    <h2 class="section-title">Support a <span class="accent">Cause</span></h2>
+    <p class="section-desc">Your donation directly funds disaster relief, orphan care, education and clean water projects across Pakistan.</p>
+  </div>
+  <div class="donation-layout">
+    <div class="donation-card reveal">
+      <h3>Choose Your Amount</h3>
+      <div class="amount-grid">
+        <button class="amount-btn" onclick="selectAmount(this, 500)">Rs 500</button>
+        <button class="amount-btn active" onclick="selectAmount(this, 1000)">Rs 1,000</button>
+        <button class="amount-btn" onclick="selectAmount(this, 2500)">Rs 2,500</button>
+        <button class="amount-btn" onclick="selectAmount(this, 5000)">Rs 5,000</button>
+        <button class="amount-btn" onclick="selectAmount(this, 10000)">Rs 10,000</button>
+        <button class="amount-btn" onclick="selectAmount(this, 0)">Custom</button>
+      </div>
+      <input type="number" class="custom-amount" placeholder="Enter custom amount (PKR)" id="customAmount"/>
+      <select class="cause-select">
+        <option>Disaster Relief Fund</option>
+        <option>Education Bano Qabil</option>
+        <option>Clean Water Projects</option>
+        <option>Healthcare Camps</option>
+        <option>Orphan Care Program</option>
+      </select>
+      <button class="donate-submit" onclick="handleDonate()">Donate Now via JazzCash / EasyPaisa / Bank</button>
     </div>
-    <div class="hero-stats">
-      <div class="stat-item">
-        <span class="stat-num" data-target="50000">0</span>
-        <span class="stat-label">Volunteers</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-num" data-target="33">0</span>
-        <span class="stat-label">Years of Service</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-num" data-target="300">0</span>
-        <span class="stat-label">Ambassadors</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-num" data-target="100">0</span>
-        <span class="stat-label">Cities Reached</span>
+    <div class="reveal">
+      <div class="donation-causes">
+        <h3 class="causes-title">Active Campaigns</h3>
+        <div class="cause-item">
+          <div class="cause-header">
+            <h4>Flood Relief 2025</h4>
+            <span>Rs 82L raised</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:75%"></div></div>
+        </div>
+        <div class="cause-item">
+          <div class="cause-header">
+            <h4>Bano Qabil Scholarships</h4>
+            <span>Rs 54L raised</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:58%"></div></div>
+        </div>
+        <div class="cause-item">
+          <div class="cause-header">
+            <h4>Clean Water Thar</h4>
+            <span>Rs 38L raised</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:40%"></div></div>
+        </div>
+        <div class="cause-item">
+          <div class="cause-header">
+            <h4>Gaza Medical Aid</h4>
+            <span>Rs 1.1Cr raised</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:90%"></div></div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="hero-scroll">Scroll</div>
 </section>
 
 <footer>

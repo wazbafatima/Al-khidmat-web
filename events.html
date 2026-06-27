@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events | Alkhidmat Impact Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="assests/Al-khidmat-logo.jpg" alt="Alkhidmat Logo"/>
+    <div class="nav-logo-text">
+      <span class="logo-main">ALKHIDMAT</span>
+      <span class="logo-sub">Impact Hub</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="impact.html">Our Impact</a></li>
+    <li><a href="volunteer.html">Volunteer</a></li>
+    <li><a href="events.html" class="active-link">Events</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="donations.html" class="nav-donate-btn">Donate Now</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="impact.html" onclick="closeMenu()">Our Impact</a>
+  <a href="volunteer.html" onclick="closeMenu()">Volunteer</a>
+  <a href="donations.html" onclick="closeMenu()">Donate Now</a>
+  <a href="events.html" onclick="closeMenu()">Events</a>
+  <a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+
+<section id="events">
+  <div class="section-header reveal">
+    <div class="section-label">Upcoming and Recent</div>
+    <h2 class="section-title">Events and <span class="accent">Campaigns</span></h2>
+    <p class="section-desc">Join Alkhidmat's youth campaigns from plantation drives to blood donation and skill development workshops.</p>
+  </div>
+  <div class="events-grid">
+    <div class="event-card reveal">
+      <div class="event-img-wrap">
+        <img class="event-img" src="assests/summit.jpg" alt="Bano Qabil Summit"/>
+      </div>
+      <div class="event-body">
+        <span class="event-date-badge">July 10, 2026</span>
+        <h3>Alkhidmat Youth Leadership Summit</h3>
+        <p>National gathering of 1000+ youth volunteers with leadership training, awards and new initiatives.</p>
+        <div class="event-footer">
+          <span class="event-location">Karachi, Expo Centre</span>
+          <a href="contact.html" class="event-register">Register</a>
+        </div>
+      </div>
+    </div>
+    <div class="event-card reveal">
+      <div class="event-img-wrap">
+        <img class="event-img" src="assests/clean and green.jpg" alt="Clean and Green Drive"/>
+      </div>
+      <div class="event-body">
+        <span class="event-date-badge">July 15, 2026</span>
+        <h3>Clean and Green Pakistan Drive</h3>
+        <p>Mass plantation campaign with thousands of volunteers planting trees across Pakistan's major cities.</p>
+        <div class="event-footer">
+          <span class="event-location">Nationwide</span>
+          <a href="contact.html" class="event-register">Join</a>
+        </div>
+      </div>
+    </div>
+    <div class="event-card reveal">
+      <div class="event-img-wrap">
+        <img class="event-img" src="assests/blood donation.jpg" alt="Blood Donation"/>
+      </div>
+      <div class="event-body">
+        <span class="event-date-badge">Every Sunday</span>
+        <h3>Blood Donation Camp</h3>
+        <p>Weekly blood donation drives at Alkhidmat centers across all major cities of Pakistan.</p>
+        <div class="event-footer">
+          <span class="event-location">All Major Cities</span>
+          <a href="contact.html" class="event-register">Sign Up</a>
+        </div>
+      </div>
+    </div>
+    <div class="event-card reveal">
+      <div class="event-img-wrap">
+        <img class="event-img" src="assests/it-traning.jpg" alt="Bano Qabil Training"/>
+      </div>
+      <div class="event-body">
+        <span class="event-date-badge">August 1, 2026</span>
+        <h3>Bano Qabil 5.0 Tech Training</h3>
+        <p>Free IT skills program in Web Dev, AI and Data Science. Applications open for deserving youth.</p>
+        <div class="event-footer">
+          <span class="event-location">Online and Centers</span>
+          <a href="contact.html" class="event-register">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="assests/Al-khidmat-logo.jpg" alt="Alkhidmat Logo"/>
+        <span class="footer-logo-name">ALKHIDMAT FOUNDATION</span>
+      </div>
+      <p>Pakistan's leading non-profit humanitarian organization serving communities through disaster relief, education, healthcare and youth empowerment since 1990.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="impact.html">Our Impact</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="donations.html">Donate</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="#">Disaster Management</a></li>
+        <li><a href="#">Bano Qabil</a></li>
+        <li><a href="#">Orphan Care</a></li>
+        <li><a href="#">Clean Water</a></li>
+        <li><a href="#">Healthcare</a></li>
+        <li><a href="#">Gaza Aid</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>2026 Alkhidmat Foundation Pakistan. All rights reserved.</p>
+    <p>Made by <strong>Wazba Fatima</strong> | Bano Qabil Web Dev Competition 2026</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

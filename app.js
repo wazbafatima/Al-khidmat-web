@@ -29,7 +29,7 @@ function closeMenu() {
   document.getElementById('mobileMenu').classList.remove('open');
 }
 
-// ===== SCROLL REVEAL =====
+// SCROLL REVEAL 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alkhidmat Impact Hub | Youth For Change</title>
+  <title>Contact | Alkhidmat Impact Hub</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
@@ -18,11 +18,11 @@
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html" class="active-link">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="impact.html">Our Impact</a></li>
     <li><a href="volunteer.html">Volunteer</a></li>
     <li><a href="events.html">Events</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html" class="active-link">Contact</a></li>
     <li><a href="donations.html" class="nav-donate-btn">Donate Now</a></li>
   </ul>
   <div class="hamburger" id="hamburger" onclick="toggleMenu()">
@@ -41,42 +41,81 @@
   <a href="contact.html" onclick="closeMenu()">Contact</a>
 </div>
 
-<section id="home">
-  <div class="hero-bg-pattern"></div>
-  <div class="hero-grid-lines"></div>
-  <div class="hero-content">
-    <h1 class="hero-title">
-      Youth For
-      <span class="highlight">Change</span>
-    </h1>
-    <p class="hero-tagline">خدمتِ خلق ہی خدمتِ خدا ہے</p>
-    <p class="hero-desc">
-      Empowering Pakistan's youth through disaster relief, education, healthcare and community service since 1990.
-    </p>
-    <div class="hero-btns">
-      <a href="volunteer.html" class="btn-primary">Join as Volunteer</a>
-      <a href="impact.html" class="btn-secondary">Explore Our Work</a>
+<section id="contact">
+  <div class="contact-layout">
+    <div>
+      <div class="section-label reveal">Get In Touch</div>
+      <h2 class="section-title reveal">Contact <span class="gold-text">Us</span></h2>
+      <p class="section-desc reveal">Reach out to volunteer, donate, partner or learn more about Alkhidmat's work.</p>
+      <div class="reveal">
+        <div class="contact-info-item">
+          <div class="contact-icon">Tel</div>
+          <div>
+            <h4>Helpline</h4>
+            <p>0800 44 44 8</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">Tel</div>
+          <div>
+            <h4>Donations</h4>
+            <p>0304 111 4 22</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">Web</div>
+          <div>
+            <h4>Website</h4>
+            <p><a href="https://www.alkhidmat.org" target="_blank">www.alkhidmat.org</a></p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">Loc</div>
+          <div>
+            <h4>Head Office</h4>
+            <p>Alkhidmat Complex, Lahore</p>
+          </div>
+        </div>
+        <div class="social-row">
+          <a href="https://www.facebook.com/alkhidmat.org/" target="_blank" class="social-btn">FB</a>
+          <a href="https://www.instagram.com/alkhidmatpakistan/" target="_blank" class="social-btn">IG</a>
+          <a href="https://x.com/alkhidmatorg" target="_blank" class="social-btn">X</a>
+          <a href="https://www.youtube.com/@alkhidmatpakistan" target="_blank" class="social-btn">YT</a>
+        </div>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div class="stat-item">
-        <span class="stat-num" data-target="50000">0</span>
-        <span class="stat-label">Volunteers</span>
+    <div class="contact-form reveal">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Muhammad Ali"/>
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" placeholder="03XX-XXXXXXX"/>
+        </div>
       </div>
-      <div class="stat-item">
-        <span class="stat-num" data-target="33">0</span>
-        <span class="stat-label">Years of Service</span>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="you@email.com"/>
       </div>
-      <div class="stat-item">
-        <span class="stat-num" data-target="300">0</span>
-        <span class="stat-label">Ambassadors</span>
+      <div class="form-group">
+        <label>Purpose</label>
+        <select>
+          <option>I want to Volunteer</option>
+          <option>Make a Donation</option>
+          <option>Partnership / NGO</option>
+          <option>Media Inquiry</option>
+          <option>General Question</option>
+        </select>
       </div>
-      <div class="stat-item">
-        <span class="stat-num" data-target="100">0</span>
-        <span class="stat-label">Cities Reached</span>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Tell us how you would like to contribute..."></textarea>
       </div>
+      <button class="form-submit" onclick="handleContact()">Send Message</button>
     </div>
   </div>
-  <div class="hero-scroll">Scroll</div>
 </section>
 
 <footer>
