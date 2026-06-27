@@ -722,3 +722,11 @@ footer {
   .amount-grid         { grid-template-columns: repeat(2, 1fr); }
   .impact-numbers      { grid-template-columns: 1fr 1fr; }
 }
+/* Gaps b/w navbar and body */
+#impact,
+#volunteer,
+#events,
+#donations,
+#contact {
+    margin-top: 70px;
+}
